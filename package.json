@@ -1,0 +1,20 @@
+{
+  "name": "fastify-starter",
+  "version": "1.0.0",
+  "description": "fastify-starter",
+  "homepage": "https://github.com/makinosp/fastify-starter#readme",
+  "bugs": {
+    "url": "https://github.com/makinosp/fastify-starter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makinosp/fastify-starter.git"
+  },
+  "license": "BSD-3-Clause",
+  "author": "Maki Makino",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
