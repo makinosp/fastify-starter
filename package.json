@@ -20,5 +20,15 @@
   "devDependencies": {
     "@types/node": "^24.10.0",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@fastify/autoload": "^6.3.1",
+    "@fastify/postgres": "^6.0.2",
+    "@joggr/fastify-prisma": "^6.0.1",
+    "@prisma/client": "^6.19.0",
+    "@swc/helpers": "^0.5.17",
+    "fastify-type-provider-zod": "^6.1.0",
+    "pg": "^8.16.3",
+    "zod": "^4.1.12"
   }
 }
