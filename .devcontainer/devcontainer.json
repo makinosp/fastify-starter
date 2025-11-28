@@ -1,0 +1,28 @@
+{
+  "name": "Fastify Starter - Dev Container",
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "dev",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "typescript.tsdk": "node_modules/typescript/lib"
+      },
+      "extensions": [
+        "docker.docker",
+        "Prisma.prisma",
+        "vitest.explorer"
+      ]
+    }
+  },
+  "postCreateCommand": "npm ci && npx prisma generate || true",
+  "forwardPorts": [
+    3000
+  ],
+  "remoteUser": "vscode",
+  "features": {}
+}

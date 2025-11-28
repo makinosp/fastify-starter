@@ -1,5 +1,7 @@
 {
   "recommendations": [
+    "docker.docker",
+    "Prisma.prisma",
     "vitest.explorer"
   ]
 }
