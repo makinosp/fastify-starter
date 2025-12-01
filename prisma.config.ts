@@ -4,7 +4,7 @@ import { defineConfig } from 'prisma/config';
 
 const baseDirPath = path.dirname(fileURLToPath(import.meta.url));
 
-const url = process.env.DATABASE_URL ?? 'file:./dev.db';
+const url = process.env.DATABASE_URL ?? 'file:./db/dev.sqlite';
 
 export default defineConfig({
   schema: path.join(baseDirPath, 'prisma', 'models'),
