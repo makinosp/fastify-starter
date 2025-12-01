@@ -15,7 +15,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ts:typecheck": "tsc"
   },
   "devDependencies": {
     "@dotenvx/dotenvx": "^1.51.1",
@@ -35,6 +36,7 @@
     "@fastify/autoload": "^6.3.1",
     "@fastify/postgres": "^6.0.2",
     "@joggr/fastify-prisma": "^6.0.1",
+    "@prisma/adapter-pg": "^7.0.1",
     "@prisma/client": "^7.0.1",
     "@swc/helpers": "^0.5.17",
     "fastify-type-provider-zod": "^6.1.0",
