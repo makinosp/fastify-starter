@@ -21,6 +21,7 @@
     "inspect": "run-p typecheck lint",
     "lint": "eslint --concurrency auto --cache .",
     "lint:fix": "eslint --concurrency auto --cache --fix .",
+    "model:generate": "prisma generate",
     "start": "node ./dist/src/app.js",
     "ts:typecheck": "tsc",
     "ts:transpile:src": "swc ./src -d ./dist",
