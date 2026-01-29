@@ -30,34 +30,34 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@dotenvx/dotenvx": "^1.51.1",
-    "@fastify/swagger": "^9.6.0",
-    "@fastify/swagger-ui": "^5.2.3",
-    "@stylistic/eslint-plugin": "^5.6.1",
-    "@swc/cli": "^0.7.9",
-    "@swc/core": "^1.15.1",
-    "@types/node": "^24.10.0",
-    "@vitest/coverage-v8": "^4.0.8",
-    "eslint": "^9.39.1",
+    "@dotenvx/dotenvx": "^1.52.0",
+    "@fastify/swagger": "^9.6.1",
+    "@fastify/swagger-ui": "^5.2.5",
+    "@stylistic/eslint-plugin": "^5.7.1",
+    "@swc/cli": "^0.7.10",
+    "@swc/core": "^1.15.11",
+    "@types/node": "^25.1.0",
+    "@vitest/coverage-v8": "^4.0.18",
+    "eslint": "^9.39.2",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
     "npm-run-all": "^4.1.5",
-    "prisma": "^7.0.1",
+    "prisma": "^7.3.0",
     "tsconfig-paths": "^4.2.0",
-    "tsx": "^4.20.6",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.48.0",
-    "vitest": "^4.0.8"
+    "typescript-eslint": "^8.54.0",
+    "vitest": "^4.0.18"
   },
   "dependencies": {
     "@fastify/autoload": "^6.3.1",
     "@fastify/postgres": "^6.0.2",
-    "@joggr/fastify-prisma": "^6.0.1",
-    "@prisma/adapter-pg": "^7.0.1",
-    "@prisma/client": "^7.0.1",
-    "@swc/helpers": "^0.5.17",
+    "@joggr/fastify-prisma": "^7.0.0",
+    "@prisma/adapter-pg": "^7.3.0",
+    "@prisma/client": "^7.3.0",
+    "@swc/helpers": "^0.5.18",
     "fastify-type-provider-zod": "^6.1.0",
-    "pg": "^8.16.3",
-    "zod": "^4.1.12"
+    "pg": "^8.17.2",
+    "zod": "^4.3.6"
   }
 }
