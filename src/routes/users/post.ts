@@ -15,11 +15,11 @@ const plugin: FastifyPluginAsyncZod = async (fastify) => {
       },
     },
     async (request, reply) => {
-      const user = await fastify.prisma.user.create({
+      const user = await fastify.db.user.create({
         data: request.body,
       });
       return reply.code(201).send(user);
-    }
+    },
   );
 };
 

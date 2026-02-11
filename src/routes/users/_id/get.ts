@@ -17,7 +17,7 @@ const plugin: FastifyPluginAsyncZod = async (fastify) => {
     },
     async (request, reply) => {
       const { id } = request.params;
-      const user = await fastify.prisma.user.findUnique({
+      const user = await fastify.db.user.findUnique({
         where: { id },
       });
 
@@ -26,7 +26,7 @@ const plugin: FastifyPluginAsyncZod = async (fastify) => {
       }
 
       return reply.send(user);
-    }
+    },
   );
 };
 

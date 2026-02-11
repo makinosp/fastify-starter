@@ -20,7 +20,7 @@ const plugin: FastifyPluginAsyncZod = async (fastify) => {
       const { id } = request.params;
 
       try {
-        const user = await fastify.prisma.user.update({
+        const user = await fastify.db.user.update({
           where: { id },
           data: request.body,
         });
@@ -28,7 +28,7 @@ const plugin: FastifyPluginAsyncZod = async (fastify) => {
       } catch (error) {
         return reply.code(404).send({ error: 'User not found' });
       }
-    }
+    },
   );
 };
 

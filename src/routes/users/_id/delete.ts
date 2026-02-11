@@ -19,14 +19,14 @@ const plugin: FastifyPluginAsyncZod = async (fastify) => {
       const { id } = request.params;
 
       try {
-        await fastify.prisma.user.delete({
+        await fastify.db.user.delete({
           where: { id },
         });
         return reply.code(204).send();
       } catch (error) {
         return reply.code(404).send({ error: 'User not found' });
       }
-    }
+    },
   );
 };
 

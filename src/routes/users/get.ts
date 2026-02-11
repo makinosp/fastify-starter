@@ -14,11 +14,11 @@ const plugin: FastifyPluginAsyncZod = async (fastify) => {
       },
     },
     async (_request, reply) => {
-      const users = await fastify.prisma.user.findMany({
+      const users = await fastify.db.user.findMany({
         orderBy: { createdAt: 'desc' },
       });
       return reply.send(users);
-    }
+    },
   );
 };
 
