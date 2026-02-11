@@ -20,7 +20,7 @@ export default (fastify: FastifyZodInstance): FastifyZodInstance =>
         where: { id },
         data: request.body,
       });
-      return reply.send(user);
+      return await reply.send(user);
     } catch {
       return reply.code(404).send({ error: 'User not found' });
     }

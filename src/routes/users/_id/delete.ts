@@ -16,7 +16,7 @@ export default (fastify: FastifyZodInstance): FastifyZodInstance =>
     const { id } = request.params;
     try {
       await fastify.db.user.delete({ where: { id } });
-      return reply.code(204).send();
+      return await reply.code(204).send();
     } catch {
       return reply.code(404).send({ error: 'User not found' });
     }
